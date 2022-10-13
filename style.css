@@ -1,0 +1,44 @@
+body{
+    margin:auto;
+    color:aliceblue;
+    background-color: bisque;
+    width: 50%;
+    max-width:800px;
+}
+#wrapper{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: black;
+    gap:10px;
+}
+div{
+    border:2px solid whitesmoke;
+}
+img{
+    max-width: 300px;
+    width:50%;
+}
+@media screen and (max-width: 600px) {
+    body {
+      background-color: red;
+    }
+    #container{
+        grid-template-columns: 1fr 1fr;
+        max-width: 100%;
+        width: 100%;
+    }
+    .doboz {
+        padding: 5px 5px 5px 5px; 
+        height:60vh;
+    }
+  }
+  @media screen and (max-width: 300px) {
+    body {
+        grid-template-columns: 1fr;
+      background-color:chocolate;
+      font-size: 6vw;
+    }
+  }
+.doboz{
+    padding: 10px;
+}
